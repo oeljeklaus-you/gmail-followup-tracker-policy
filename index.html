@@ -1,21 +1,137 @@
-Privacy Policy for Gmail Follow-up Tracker
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy - Gmail Follow-up Tracker</title>
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --accent: #2563eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+    .wrap {
+      max-width: 880px;
+      margin: 40px auto;
+      padding: 0 16px 40px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 24px;
+    }
+    h1 { margin: 0 0 8px; font-size: 30px; }
+    h2 { margin: 26px 0 8px; font-size: 20px; }
+    p { margin: 8px 0; }
+    ul { margin: 8px 0 8px 20px; }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+    .note {
+      margin-top: 20px;
+      padding: 12px 14px;
+      border: 1px solid #dbeafe;
+      background: #eff6ff;
+      border-radius: 10px;
+      color: #1e3a8a;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1>Privacy Policy</h1>
+      <div class="meta">
+        Product: <strong>Gmail Follow-up Tracker</strong><br />
+        Effective date: <strong>April 14, 2026</strong>
+      </div>
 
-Gmail Follow-up Tracker processes Gmail thread information (such as subject, sender, and thread context) to provide follow-up task tracking and recurring reminders.
+      <p>
+        Gmail Follow-up Tracker helps users turn Gmail threads into follow-up tasks with recurring reminders.
+        This policy explains what data is processed and how it is used.
+      </p>
 
-Data Collection and Storage
-- The extension stores follow-up task data locally in the user's browser using chrome.storage.local.
-- The extension does not sell user data.
-- The extension does not share user data with third parties.
-- The extension does not use user data for advertising.
+      <h2>1. Data We Process</h2>
+      <p>To provide core functionality, the extension may process:</p>
+      <ul>
+        <li>Email thread context visible on Gmail pages (for example: subject, sender, thread identifier, thread URL).</li>
+        <li>Task metadata (status, reminder interval, reminder timestamps, completion state).</li>
+      </ul>
 
-Permissions Usage
-- storage: save follow-up tasks and reminder settings locally.
-- alarms: schedule recurring reminder checks.
-- notifications: display due follow-up reminders.
-- tabs and activeTab: access the active Gmail tab and open related threads.
-- scripting and host permission (https://mail.google.com/*): inject and run extension functionality on Gmail pages.
+      <h2>2. How We Use Data</h2>
+      <ul>
+        <li>Create and manage follow-up tasks for Gmail threads.</li>
+        <li>Schedule recurring reminders.</li>
+        <li>Display browser notifications and badge counts for due tasks.</li>
+      </ul>
 
-Contact
-For privacy questions, contact: oeljeklaus2heart@gmail.com
+      <h2>3. Storage, Sharing, and Selling</h2>
+      <ul>
+        <li>Data is stored locally in the user’s browser via <code>chrome.storage.local</code>.</li>
+        <li>We do <strong>not</strong> sell user data.</li>
+        <li>We do <strong>not</strong> share user data with third parties.</li>
+        <li>We do <strong>not</strong> use data for advertising.</li>
+      </ul>
 
-Effective Date: April 14, 2026
+      <h2>4. Network and Remote Code</h2>
+      <ul>
+        <li>This extension does not rely on a backend service for core features in the current version.</li>
+        <li>All executable code is packaged with the extension.</li>
+        <li>No remotely hosted code (remote JavaScript/WASM execution) is used.</li>
+      </ul>
+
+      <h2>5. Permissions Explanation</h2>
+      <ul>
+        <li><code>storage</code>: Save tasks and reminder settings locally.</li>
+        <li><code>alarms</code>: Trigger recurring reminder checks.</li>
+        <li><code>notifications</code>: Show follow-up reminder notifications.</li>
+        <li><code>tabs</code>: Open related Gmail thread from notifications and query active tab context.</li>
+        <li><code>activeTab</code>: Access the active Gmail tab when user interacts with the extension.</li>
+        <li><code>scripting</code>: Inject/re-inject content script in Gmail tab when needed.</li>
+        <li><code>https://mail.google.com/*</code> (host permission): Run only on Gmail pages.</li>
+      </ul>
+
+      <h2>6. User Control</h2>
+      <p>
+        Users can remove tasks at any time, mark tasks as done, disable notifications in browser settings,
+        or uninstall the extension to stop all processing.
+      </p>
+
+      <h2>7. Children’s Privacy</h2>
+      <p>
+        This extension is not directed to children under 13 and is intended for productivity use by general users.
+      </p>
+
+      <h2>8. Changes to This Policy</h2>
+      <p>
+        We may update this policy from time to time. Updated versions will be posted at this URL with a new effective date.
+      </p>
+
+      <h2>9. Contact</h2>
+      <p>
+        For privacy questions, contact:
+        <a href="mailto:oeljeklaus2heart@gmail.com">oeljeklaus2heart@gmail.com</a>
+      </p>
+
+      <div class="note">
+        Replace the contact email before publishing.
+      </div>
+    </section>
+  </main>
+</body>
+</html>
